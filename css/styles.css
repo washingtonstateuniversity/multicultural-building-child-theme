@@ -354,7 +354,7 @@ div#timeline .dot:nth-child(3) {
 div#timeline .dot:nth-child(4) {
   left: 58%;
 }
-div#timeline .dot date {
+div#timeline .dot .date {
   display: block;
   position: relative;
   top: -60px;
@@ -369,7 +369,7 @@ div#timeline .dot p {
 div#timeline .dot.bottom  p {
     top: 0px;
 }
-div#timeline .dot.bottom date {
+div#timeline .dot.bottom .date {
 	top: 4px;
 }
 div#timeline .dot span {
