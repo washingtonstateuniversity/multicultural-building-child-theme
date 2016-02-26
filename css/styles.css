@@ -406,6 +406,7 @@ div#timeline.loaded > *
 }
 
 label.gfield_label {display:none; }
+
 ol, ul {
     padding: 0;
     list-style: none;

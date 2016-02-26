@@ -19,7 +19,7 @@ jQuery(document).ready(function() {
             } else {
                 var dimensions = 3 + Math.random() * 3;
                 var randomopacity = Math.random();
-                console.info("Randomopacity", randomopacity);
+                //console.info("Randomopacity", randomopacity);
                 c = jQuery("<div />", {
                     "class": "particle",
                     maxopacity: Math.random(),
