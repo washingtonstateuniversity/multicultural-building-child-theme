@@ -14,6 +14,7 @@
  *
  * As with the action above, change the prefix of this function from spine_child
  */
+add_action('wp_enqueue_scripts', 'spine_child_enqueue_scripts');
 function spine_child_enqueue_scripts() {
 	// This enqueues a script, located in this project's /js/ directory, and tells WordPress
 	// that jQuery is also required. The final parameter - true - loads the script in the footer.
@@ -23,4 +24,22 @@ function spine_child_enqueue_scripts() {
     wp_enqueue_script( 'init-js', get_stylesheet_directory_uri() . '/js/init.js', array( 'jquery' ), spine_get_script_version(), true );
 }
 
-add_action('wp_enqueue_scripts', 'spine_child_enqueue_scripts');
+add_action( 'gform_enqueue_scripts', 'gform_dequeue_script_list' );
+function gform_dequeue_script_list() { 
+    global $wp_styles; 
+    if( isset($wp_styles->registered['gforms_reset_css']) ) {
+        unset( $wp_styles->registered['gforms_reset_css'] );
+    } 
+    if( isset($wp_styles->registered['gforms_datepicker_css']) ) {
+        unset( $wp_styles->registered['gforms_datepicker_css'] );
+    } 
+    if( isset($wp_styles->registered['gforms_formsmain_css']) ) {
+        unset( $wp_styles->registered['gforms_formsmain_css'] );
+    } 
+    if( isset($wp_styles->registered['gforms_ready_class_css']) ) {
+        unset( $wp_styles->registered['gforms_ready_class_css'] );
+    } 
+    if( isset($wp_styles->registered['gforms_browsers_css']) ) {
+        unset( $wp_styles->registered['gforms_browsers_css'] );
+    } 
+}
