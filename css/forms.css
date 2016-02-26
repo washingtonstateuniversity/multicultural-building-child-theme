@@ -1,0 +1,222 @@
+/* ----- TEXT FIELDS ----- */
+.formwrap {
+	display: block;
+	overflow: hidden;
+	margin: 10px 40px 10px 40px;
+	padding: 0px;
+}
+.formwrap.extended {
+	display: block;
+	overflow: hidden;
+	margin: 10px 0px 0px 40px;
+	padding: 0px;
+}
+input {
+	color: rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+}
+input:focus {
+	color: rgba(255, 255, 255, 1.0);
+}
+select {
+	color: rgba(0, 0, 0, 0.2);
+}
+input, input:focus {
+	width: 100%;
+	height: 50px;
+	margin: 0px;
+	padding: 0px;
+	font: 700 12px/12px "Montserrat", Helvetica, Arial, san-serif;
+	text-align: left;
+	text-indent: 42px;
+	text-transform: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: none;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	border-radius: 2px;
+	outline: none;
+}
+select {
+	width: 100%;
+	height: 50px;
+	margin: 0px;
+	padding: 0px;
+	font: 700 12px/12px "Montserrat", Helvetica, Arial, san-serif;
+	text-align: left;
+	text-indent: 16px;
+	text-transform: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: none;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	border-radius: 2px;
+	outline: none;
+}
+select::-ms-expand {
+	display: none;
+}
+select.subject {
+	background: rgba(0, 0, 0, 0.05) url(../images/ico/arrow-down-gry.png) no-repeat calc(100% - 16px) calc(100% - 50%);
+}
+input.name {
+	background: rgba(0, 0, 0, 0.05) url(../images/ico/pen-gry.png) no-repeat 16px center;
+}
+input.email {
+	background: rgba(0, 0, 0, 0.05) url(../images/ico/email-gry.png) no-repeat 16px center;
+}
+input.message {
+	background: rgba(0, 0, 0, 0.05) url(../images/ico/bubble-left-text-gry.png) no-repeat 16px center;
+}
+input.password {
+	background: rgba(0, 0, 0, 0.05) url(../images/ico/lock-gry.png) no-repeat 16px center;
+}
+input.search {
+	background: rgba(0, 0, 0, 0.05) url(../images/ico/search-gry.png) no-repeat 16px center;
+}
+input.search.simplylht {
+	background: rgba(0, 0, 0, 0.05) url(../images/ico/search-wht.png) no-repeat 16px center;
+}
+input.current {
+	background: rgba(0, 0, 0, 0.05) url(../images/legacy/ico-map-directions-a.png) no-repeat 16px center;
+}
+input.destination {
+	background: rgba(0, 0, 0, 0.05) url(../images/legacy/ico-map-directions-b.png) no-repeat 16px center;
+}
+input.name:focus {
+	background: #94192b url(../images/ico/pen-wht.png) no-repeat 16px center;
+}
+input.email:focus {
+	background: #94192b url(../images/ico/email-wht.png) no-repeat 16px center;
+}
+input.message:focus {
+	background: #94192b url(../images/ico/bubble-left-text-wht.png) no-repeat 16px center;
+}
+input.password:focus {
+	background: #94192b url(../images/ico/lock-wht.png) no-repeat 16px center;
+}
+input.search:focus {
+	background: #94192b url(../images/ico/search-wht.png) no-repeat 16px center;
+}
+input.search.simplydrk:focus {
+	background: rgba(255, 255, 255, 0.0) url(../images/ico/search-gry.png) no-repeat 16px center;
+}
+input.name.simplydrk:focus {
+	background: rgba(255, 255, 255, 0.0) url(../images/ico/pen-gry.png) no-repeat 16px center;
+}
+input.password.simplydrk:focus {
+	background: rgba(255, 255, 255, 0.0) url(../images/ico/lock-gry.png) no-repeat 16px center;
+}
+input.current:focus {
+	background: #94192b url(../images/legacy/ico-map-directions-a.png) no-repeat 16px center;
+}
+input.destination:focus {
+	background: #94192b url(../images/legacy/ico-map-directions-b.png) no-repeat 16px center;
+}
+input.name, input.email, input.message, input.password, input.search, input.name:focus, input.email:focus, input.message:focus, input.password:focus, input.search:focus, input.current, input.current:focus, input.destination, input.destination:focus, input.search.simplydrk:focus, input.search.simplylht, input.name.simplydrk:focus, input.password.simplydrk:focus, select.subject {
+	background-size: 16px;
+}
+input.simplydrk {
+	background-color: rgba(255, 255, 255, 0.0);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-ms-border-radius: 0px;
+	border-radius: 0px;
+}
+input.simplydrk:focus {
+	color: #4c4c4c;
+	background-color: rgba(255, 255, 255, 0.0);
+	border-bottom: 1px solid #4c4c4c;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-ms-border-radius: 0px;
+	border-radius: 0px;
+}
+input.simplylht {
+	color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255, 255, 255, 0.0);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-ms-border-radius: 0px;
+	border-radius: 0px;
+}
+input.simplylht:focus {
+	color: #fff;
+	background-color: rgba(255, 255, 255, 0.0);
+	border-bottom: 1px solid #fff;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-ms-border-radius: 0px;
+	border-radius: 0px;
+}
+/* ----- Smart Search Drop Down Menu ----- */
+.dropdown {
+	position: absolute;
+	background: rgba(255, 255, 255, 1.0);
+	padding: 0px;
+	margin: 0px;
+	max-width: 300px;
+	text-align: left;
+	display: block;
+	-webkit-border-bottom-left-radius: 2px;
+	-webkit-border-bottom-right-radius: 2px;
+	-moz-border-radius-bottomleft: 2px;
+	-moz-border-radius-bottomright: 2px;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+}
+.dropdown a {
+	padding: 15px 15px 15px 15px;
+	color: #4c4c4c;
+	display: block;
+	font: 400 12px/12px "Montserrat", Helvetica, Arial, san-serif;
+}
+.dropdown a:hover, .dropdown a:focus {
+	color: #ffffff;
+	background: #94192b;
+}
+.dropdown a:hover strong, .dropdown a:focus b {
+	color: #ffffff;
+}
+.dropdown a strong, .dropdown a b {
+	color: #94192b;
+	font: 700 12px/12px "Montserrat", Helvetica, Arial, san-serif;
+}
+.dropdown li {
+	list-style: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.dropdown li:first-child {
+	padding-top: 0px;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.dropdown li:last-child {
+	padding-bottom: 0px;
+	border-bottom: none;
+}
+
+/* ------------------------- MEDIA SCREEN ------------------------- */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+.dropdown {
+	max-width: 240px;
+}
+}

@@ -1,0 +1,65 @@
+/* ------------------------- ROBOTO ------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900,100italic,300italic,400italic,500italic,700italic,900italic);
+/*	Thin 100
+	Thin 100 Italic
+
+	Light 300
+	Light 300 Italic
+
+	Normal 400
+	Normal 400 Italic
+
+	Medium 500
+	Medium 500 Italic
+
+	Bold 700
+	Bold 700 Italic
+
+	Ultra-Bold 900
+	Ultra-Bold 900 Italic
+*/
+/* ------------------------- ROBOTO CONDENSED ------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic);
+/*
+	Light 300
+	Light 300 Italic
+
+	Normal 400
+	Normal 400 Italic
+
+	Bold 700
+	Bold 700 Italic
+*/
+/* ------------------------- MONTSERRAT ------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+/*	
+	Normal 400
+
+	Bold 700
+*/
+/* ------------------------- OSWALD ------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,300,700);
+/*	
+	Light 300
+	
+	Normal 400
+
+	Bold 700
+*/
+/* ------------------------- OPEN SANS ------------------------- */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+/*	Light 300
+	Light 300 Italic
+
+	Normal 400
+	Normal 400 Italic
+
+	Semi-Bold 600
+	Semi-Bold 600 Italic
+
+	Bold 700
+	Bold 700 Italic
+	
+	Extra-Bold 800
+	Extra-Bold 800 Italic
+*/

@@ -1,0 +1,296 @@
+p {
+	/*font: 400 14px/26px "Open Sans", Helvetica, Arial, san-serif;*/
+	font: 400 14px/26px "Open Sans", Helvetica, Arial, san-serif;
+}
+article, aside, figure, footer, header, hgroup, nav, section {
+	display: block;
+}
+/* ------------------------- HEADING ------------------------- */
+p, h1, h2, h3, h4, h5, h6 {
+	margin: 20px 40px 20px 40px;
+	padding: 0px;
+	-webkit-user-select: all;
+	-khtml-user-select: all;
+	-moz-user-select: all;
+	-ms-user-select: all;
+	user-select: all;
+}
+h1 {
+	font: 700 100px/80px "Open Sans", Helvetica, Arial, san-serif;
+	text-transform: uppercase;
+}
+h2 {
+	font: 700 70px/60px "Open Sans", Helvetica, Arial, san-serif;
+	text-transform: uppercase;
+}
+h3 {
+	font: 700 24px/34px "Open Sans", Helvetica, Arial, san-serif;
+}
+h4 {
+	font: 700 10px/10px "Open Sans", Helvetica, Arial, san-serif;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+}
+h5 {
+	font: 700 14px/14px "Open Sans", Helvetica, Arial, san-serif;
+}
+h6 {
+	font: 400 10px/14px "Open Sans", Helvetica, Arial, san-serif;
+	letter-spacing: 0px;
+}
+/* ------------------------- LINKS ------------------------- */
+a {
+	color: #ab0d24;
+	text-decoration: none;
+	-webkit-transition-property: color, background;
+	-moz-transition-property: color, background;
+	-o-transition-property: color, background;
+	transition-property: color, background;
+	-webkit-transition-duration: .4s, .4s;
+	-moz-transition-duration: .4s, .4s;
+	-o-transition-duration: .4s, .4s;
+	transition-duration: .4s, .4s;
+	cursor: pointer;
+}
+a:hover {
+	color: #4c4c4c;
+	text-decoration: none;
+}
+a img {
+	border: none;
+}
+/* ------------------------- WRAPPER ------------------------- */
+.wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+/* ------------------------- SECTION ------------------------- */
+section {
+	position: relative;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+/* ----- CONTENT ----- */
+section.content {
+	display: block;
+	padding: 100px 0px 100px 0px;
+}
+/* ----- HERO ----- */
+section.hero {
+	background: none;
+	background-color: rgba(34, 34, 34, 1.0);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}  
+section.hero .start, section.hero .start a {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	margin: 0px 0px 0px -25px;
+	padding: 0px;
+	left: 50%;
+	bottom: 0px;
+	-webkit-animation: bounce 2s infinite;
+	/*-webkit-animation: flash 4s infinite;*/
+	background: url(../images/ico/arrow-down-wht.png) no-repeat center center;
+	background-size: 16px;
+	-webkit-opacity: 1.0;
+	-moz-opacity: 1.0;
+	opacity: 1.0;
+}
+section.hero .start a:hover {
+	border: none;
+	-webkit-opacity: 0.7;
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+}
+/* ----- Bold (NO Faux) ----- */
+section b, section strong {
+	font-weight: 700;
+}
+/* ------------------------- ARTICLE ------------------------- */
+.wrap {
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-flex-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	resize: vertical;
+}
+article {
+	margin: 0px auto 0px auto;
+	padding: 0px;
+	resize: vertical;
+	/*overflow-x: hidden;*/
+	resize: none;
+}
+/* ----- COLUMNS ----- */
+.full, .half, .third, .fourth, .fifth, .main {
+	display: block;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+.full {
+	width: 100%;
+}
+.half {
+	width: 50%;
+}
+.third {
+	width: 33.33333333333333%;
+}
+.fourth {
+	width: 25%;
+}
+.fifth {
+	width: 20%;
+}
+.main {
+	width: 75%;
+}
+
+/* ----- ELEMENTS ----- */
+.divider {
+	display: block;
+	height: 0px;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.divider.xl {
+	margin: 20px 0px 20px 0px;
+}
+.divider.med {
+	margin: 20px 0px 20px 40px;
+}
+.divider.sm {
+	margin: 20px 40px 20px 40px;
+}
+.right {
+	float: right;
+}
+.left {
+	float: left;
+}
+.clear, .clear:after {
+	clear: both;
+}
+.hide {
+	display: none !important;
+}
+.txtleft {
+	text-align: left;
+}
+.txtcenter {
+	text-align: center;
+}
+.txtright {
+	text-align: right;
+}
+.noboxshadow {
+	box-shadow: none;
+}
+/* ----- SCROLL FADEIN ----- */
+.fademe {
+	opacity: 0.1;
+}
+/* ------------------------- MEDIA SCREEN ------------------------- */
+/* IPAD RETINA */
+@media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
+section.hero {
+	height: 672px; /* minus (-)96px because of Brower Address and Tab bar */
+}
+section.hero h2 {
+	font: 700 35px/30px "Montserrat", Helvetica, Arial, san-serif;
+}
+}
+@media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+section.hero {
+	height: 928px; /* minus (-)96px because of Brower Address and Tab bar */
+}
+}
+/* IPAD MINI */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1) {
+section.hero {
+	height: 672px; /* minus (-)96px because of Brower Address and Tab bar */
+}
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1) {
+section.hero {
+	height: 928px; /* minus (-)96px because of Brower Address and Tab bar */
+}
+}
+@media screen and (max-width: 1024px) {
+footer li {
+	padding: 20px 40px 20px 40px;
+}
+.fourth {
+	width: 50%;
+}
+}
+@media screen and (max-width: 768px) {
+h1 {
+	font: 700 85px/75px "Open Sans", Helvetica, Arial, san-serif;
+	text-transform: uppercase;
+}
+h2 {
+	font: 700 45px/40px "Open Sans", Helvetica, Arial, san-serif;
+}
+.half, .fifth, .third {
+	width: 100%;
+}
+/*.fademe {
+	opacity: 1.0;
+}*/
+/*section.hero {
+	-webkit-background-size: 1500px;
+	-moz-background-size: 1500px;
+	-o-background-size: 1500px;
+	background-size: 1500px;
+}*/
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+body {
+	margin: 0px 0px 0px 0px;
+}
+h1 {
+	font: 700 50px/40px "Open Sans", Helvetica, Arial, san-serif;
+}
+h2 {
+	font: 700 30px/30px "Open Sans", Helvetica, Arial, san-serif;
+}
+h3 {
+	font: 700 20px/30px "Open Sans", Helvetica, Arial, san-serif;
+}
+h4 {
+	letter-spacing: 3px;
+}
+.fourth {
+	width: 100%;
+}
+/*section.hero {
+	-webkit-background-size: 1000px;
+	-moz-background-size: 1000px;
+	-o-background-size: 1000px;
+	background-size: 1000px;
+}*/
+section.hero h4 {
+	margin: 0px 0px 5px 0px;
+	letter-spacing: 3px;
+	margin-right: -3px;
+}
+}

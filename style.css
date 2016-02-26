@@ -1,0 +1,18 @@
+/*
+Theme Name: WSU Multicultural Building
+Theme URI: https://mcb.wsu.edu/
+Author: WSU University Communications
+Author URI: https://web.wsu.edu/
+Description: A child theme of the WSU Web Communications Spine template.
+Template: spine
+Version: 0.1.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@import "css/fonts.css";
+@import "css/buttons.css";
+@import "css/forms.css";
+@import "css/animate.css";
+@import "css/mainModified.css";
+@import "css/styles.css";
