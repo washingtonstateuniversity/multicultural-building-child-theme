@@ -43,7 +43,8 @@ function gform_dequeue_script_list() {
         unset( $wp_styles->registered['gforms_browsers_css'] );
     } 
 }
-add_filter('wp_kses_allowed_html', array($this, 'allow_factor_attribute'), 10);
+
+add_filter('wp_kses_allowed_html', 'allow_factor_attribute', 10);
 public function allow_factor_attributes( $tags ){
     $tags['div']['data-factor']= true;
     
