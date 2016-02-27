@@ -423,7 +423,7 @@ ol li, ul li {
 	border-radius: 2px;
 	display:none;
 }
-.gform_confirmation_message {     
+.gform_confirmation_message, .validation_error {     
 	margin-left: 40px;
     color: #fff;
 	font: 900 24px/36px "Open Sans";

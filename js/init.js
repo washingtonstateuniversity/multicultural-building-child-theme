@@ -19,7 +19,7 @@ jQuery(document).ready(function() {
             } else {
                 var dimensions = 3 + Math.random() * 3;
                 var randomopacity = Math.random();
-                console.info("Randomopacity", randomopacity);
+                //console.info("Randomopacity", randomopacity);
                 c = jQuery("<div />", {
                     "class": "particle",
                     maxopacity: Math.random(),
@@ -86,7 +86,7 @@ jQuery(document).ready(function() {
     });
     jQuery('.slideininputs').one('inview', function() {
         var delay = 100;
-        jQuery(this).fadeIn().children(".ginput_container").each(function() {
+        jQuery(this).fadeIn().find(".ginput_container").each(function() {
             var thisobject = this;
             delay += 50;
             setTimeout(function() {
@@ -105,10 +105,10 @@ jQuery(document).ready(function() {
         var scrolledDistance = jQuery(window).scrollTop();
         var contentHeight = jQuery("body").height();
         var adjustment = (scrolledDistance - 1500) / 1578 * 750 * -1;
-        console.log("adjusting image");
+        //console.log("adjusting image");
         jQuery(".adjustableimage").each(function() {
             var thisadjustment = adjustment * jQuery(this).data("factor");
-            console.info("adjusting image", thisadjustment);
+            //console.info("adjusting image", thisadjustment);
             jQuery(this).animate({
                 "margin-top": thisadjustment + "px"
             }, 20);
