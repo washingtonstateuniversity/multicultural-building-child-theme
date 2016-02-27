@@ -44,8 +44,8 @@ function gform_dequeue_script_list() {
     } 
 }
 
-add_filter('wp_kses_allowed_html', 'allow_factor_attribute', 10);
+add_filter('wp_kses_allowed_html', 'allow_factor_attribute', 1);
 public function allow_factor_attributes( $tags ){
     $tags['div']['data-factor']= true;
-    
+    return $tags;   
 }
