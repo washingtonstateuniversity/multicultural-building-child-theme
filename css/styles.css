@@ -244,7 +244,7 @@ section.whitetext h1, section.whitetext h2, section.whitetext h3, section.whitet
 .slideInLeft, h3.slideInLeft, h5.slideInLeft { opacity:1; }
 /*section { overflow:hidden; } */
 
-.txtright.textwrap a.btnred {
+a.btnred {
     color: #fff;
     background: #94192b;
     border: 1px solid #94192b;
@@ -428,4 +428,8 @@ ol li, ul li {
 	margin-left: 40px;
     color: #fff;
 	font: 900 24px/36px "Open Sans";
+}
+.txtright.textwrap.nofade
+{
+    opacity:1;
 }
