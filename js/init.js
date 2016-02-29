@@ -185,7 +185,7 @@ function fadein(all) {
     var target = jQuery(this);
     if(all==true)
         target = jQuery('.fadein');
-    console.info('fadein',all);
+    //console.info('fadein',all);
     setTimeout(function() {
         jQuery(target).addClass("fadeIn animated");
     }, 500);

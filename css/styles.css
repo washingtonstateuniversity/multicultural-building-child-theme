@@ -5,7 +5,7 @@ textarea, textarea:focus {
 	padding: 15px 0px;
 	font: 700 12px/12px "Montserrat", Helvetica, Arial, san-serif;
 	text-align: left;
-	text-indent: 18px;
+	text-indent: 20px;
 	text-transform: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -62,10 +62,6 @@ section.hero  h3 {
 	font: bold 14px/14px "Open Sans";
     letter-spacing: 5px;
 }
-@media (max-width: 450px){
-	section.hero  h2 { font: 700 52px/50px "Montserrat"; }
-	section.hero  h3 { font: bold 14px/14px "Open Sans"; }
-}
 
 section.powerpoint {
 	padding-top:650px;
@@ -99,6 +95,34 @@ section.contentarea.powerpoint p
     margin-top: 40px;
 }
 
+.picture1 {
+	z-index: 204;
+	position:absolute;
+	left:700px; 
+	top:1500px;
+	width: 702px;
+	height: 576px;
+	background: url(../images/img-photo-1.png) no-repeat center center;
+}
+.picture2 {
+	z-index: 203;
+	position:absolute;
+	left:700px;
+	top:2000px;
+	width: 702px;
+	height: 576px;
+	background: url(../images/img-photo-2.png) no-repeat center center;
+}
+.picture3 {
+	z-index:202;
+	position:absolute;
+	left:700px;
+	top:2400px;
+	width: 702px;
+	height: 576px;
+	background: url(../images/img-photo-3.png) no-repeat center center;
+}
+
 
 @media (max-width: 791px){
 	section.contentarea.hero {	
@@ -108,8 +132,25 @@ section.contentarea.powerpoint p
 	section.contentarea.powerpoint {
 		padding-top:0px;
 	}
+    section.faqs article {
+        padding-right: 40%;
+    }
+    .picture1,.picture2,.picture3 {
+        left:55%;
+    }
 }
- 
+
+@media (max-width: 450px){
+	section.hero  h2 { font: 700 52px/50px "Montserrat"; }
+	section.hero  h3 { font: bold 14px/14px "Open Sans"; }
+    .picture1,.picture2,.picture3 {
+        display:none;
+    }
+    section.faqs article {
+        padding-right: 0px;
+    }
+}
+
  
 section.contentarea.statustimeline{ 
 	overflow:hidden;
@@ -197,33 +238,6 @@ section.feedback .textwrap p {
 	margin-top: 10px;
 	margin-bottom: 0px;
 }
-.picture1 {
-	z-index: 204;
-	position:absolute;
-	left:700px; 
-	top:1500px;
-	width: 702px;
-	height: 576px;
-	background: url(../images/img-photo-1.png) no-repeat center center;
-}
-.picture2 {
-	z-index: 203;
-	position:absolute;
-	left:700px;
-	top:2000px;
-	width: 702px;
-	height: 576px;
-	background: url(../images/img-photo-2.png) no-repeat center center;
-}
-.picture3 {
-	z-index:202;
-	position:absolute;
-	left:700px;
-	top:2400px;
-	width: 702px;
-	height: 576px;
-	background: url(../images/img-photo-3.png) no-repeat center center;
-}
 
 section.whitetext h1, section.whitetext h2, section.whitetext h3, section.whitetext h4, section.whitetext h5, section.whitetext h6, section.whitetext p
 {
@@ -294,10 +308,6 @@ a.btnred {
 @media (max-width: 1188px){
 	section.hero, .progressbar {	
 		width: calc(100% - 198px);
-	}
-	.picture1,.picture2,.picture3
-	{
-		display:none;
 	}
 }
 
