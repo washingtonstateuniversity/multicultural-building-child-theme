@@ -71,9 +71,9 @@ jQuery(document).ready(function() {
     if(isMobile)
     {
         drawline();
-        slidein(jQuery('.slidein'));
+        slidein();
         slideininputs();
-        fadein(jQuery('.fadein'));    
+        fadein(true);    
     }
     else
     {
@@ -160,9 +160,9 @@ function drawline() {
     }, 1000);
 }
 
-function slidein(which) {
+function slidein(all) {
     var target = jQuery(this);
-    if(target.length == 0)
+    if(all == true)
         target = jQuery('.slidein');
     
     setTimeout(function() {
@@ -181,11 +181,11 @@ function slideininputs() {
     });
 }
 
-function fadein(which) {
+function fadein(all) {
     var target = jQuery(this);
-    if(target.length == 0)
+    if(all==true)
         target = jQuery('.fadein');
-    
+    console.info('fadein',all);
     setTimeout(function() {
         jQuery(target).addClass("fadeIn animated");
     }, 500);
