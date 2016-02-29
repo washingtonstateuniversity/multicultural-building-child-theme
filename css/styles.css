@@ -122,8 +122,35 @@ section.contentarea.powerpoint p
 	height: 576px;
 	background: url(../images/img-photo-3.png) no-repeat center center;
 }
-
-
+.picture4 {
+	padding:42px;
+	z-index: 204;
+	width: 702px;
+	height: 576px;
+	background: url(../images/img-photo-1.png)  no-repeat center center;
+}
+.picture5 {
+	z-index: 203;
+	width: 702px;
+	height: 576px;
+	margin-top: -221px;
+	background: url(../images/img-photo-2.png)  no-repeat center center;
+}
+.picture6 {
+	z-index:202;
+	width: 702px;
+	height: 400px;
+	margin-top: -314px;
+	background: url(../images/img-photo-3.png)  no-repeat center center;
+}
+.picture4, .picture5, .picture6
+{
+	margin-left:-100px;
+}
+section.contentarea.pictures {
+	background-color:white;
+	display:none;
+}
 @media (max-width: 791px){
 	section.contentarea.hero {	
 		width: 100%;
@@ -135,8 +162,14 @@ section.contentarea.powerpoint p
     section.faqs article {
         padding-right: 40%;
     }
-    .picture1,.picture2,.picture3 {
+    .picture1 {
         left:55%;
+    }
+	.picture2 {
+        left:43%;
+    }
+	.picture3 {
+        left:38%;
     }
 }
 
@@ -148,6 +181,12 @@ section.contentarea.powerpoint p
     }
     section.faqs article {
         padding-right: 0px;
+    }
+	section.contentarea.pictures {
+		display:block;
+	}
+	.picture1,.picture2,.picture3 {
+        display:none;
     }
 }
 
