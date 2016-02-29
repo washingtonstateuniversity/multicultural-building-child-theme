@@ -22,6 +22,9 @@ textarea, textarea:focus {
 	width: calc(100% - 198px);
 }
 .spine-single-template .single.gutter .column.one { margin:0; padding:0;}
+section {
+    transform: translate3d(0,0,0);
+}
 section.contentarea {
 	text-align: center;
 	font-family: "Open Sans";
