@@ -137,7 +137,9 @@ jQuery(document).ready(function() {
         jQuery(this).css("display", "none");
     });
 });
+
 var sectionwidth = jQuery("section").width();
+var myScroll;
 
 function resizeWindow() {
     sectionwidth = jQuery("section").width();
