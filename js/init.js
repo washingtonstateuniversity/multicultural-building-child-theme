@@ -150,9 +150,16 @@ function resizeWindow() {
 function setupSideScroll()
 {
     setTimeout(function() {
-        myScroll = new IScroll('.scrollwrapper2', {
-            scrollX: true,
-            scrollY: false
-        });
+        if(!myScroll)
+        {
+            myScroll = new IScroll('.scrollwrapper2', {
+                scrollX: true,
+                scrollY: false
+            });
+        }
+        else
+        {
+            myScroll.refresh();
+        }
     }, 500);
 }
