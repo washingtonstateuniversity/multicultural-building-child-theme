@@ -106,9 +106,23 @@ jQuery(document).ready(function() {
         var contentHeight = jQuery("body").height();
         var adjustment = (scrolledDistance - 1500) / 1578 * 750 * -1;
         //console.log("adjusting image");
-        jQuery(".adjustableimage").each(function() {
-            var thisadjustment = adjustment * jQuery(this).data("factor");
-            //console.info("adjusting image", thisadjustment);
+        jQuery(".picture1").each(function() {
+            var factor = .1;
+            var thisadjustment = adjustment * factor;
+            jQuery(this).animate({
+                "margin-top": thisadjustment + "px"
+            }, 20);
+        });
+        jQuery(".picture2").each(function() {
+            var factor = 1.2;
+            var thisadjustment = adjustment * factor;
+            jQuery(this).animate({
+                "margin-top": thisadjustment + "px"
+            }, 20);
+        });
+        jQuery(".picture3").each(function() {
+            var factor = 1.9;
+            var thisadjustment = adjustment * factor;
             jQuery(this).animate({
                 "margin-top": thisadjustment + "px"
             }, 20);

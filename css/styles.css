@@ -241,7 +241,8 @@ section.whitetext h1, section.whitetext h2, section.whitetext h3, section.whitet
 	opacity:0;
 }
 	
-.slideInLeft, h3.slideInLeft, h5.slideInLeft { opacity:1; }
+/*
+.slideInLeft, h3.slideInLeft, h5.slideInLeft { opacity:1; }*/
 /*section { overflow:hidden; } */
 
 a.btnred {
