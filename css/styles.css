@@ -24,10 +24,10 @@ textarea, textarea:focus {
 .spine-single-template .single.gutter .column.one { margin:0; padding:0;}
 section {
     -webkit-transform: translate3d(0,0,0);
-  -moz-transform: translate3d(0,0,0);
-  -ms-transform: translate3d(0,0,0);
-  -o-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
 }
 section.contentarea {
 	text-align: center;
@@ -130,7 +130,7 @@ section.contentarea.statustimeline h3, section.faqs h3, section.feedback h3
 	letter-spacing:8px;
 }
 @media (max-width: 450px){
-	section.contentarea.statustimeline h3, section.faqs h3, section.feedback h3{ letter-spacing: 5px; }
+	section.contentarea.statustimeline h3, section.faqs h3, section.feedback h3{ letter-spacing: 5px;  font:700 12px/34px "Open Sans";}
 }
 section.contentarea.statustimeline h5
 {
