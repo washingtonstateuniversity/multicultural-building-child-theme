@@ -2,7 +2,7 @@ textarea, textarea:focus {
 	width: 100%;
 	height: 75px;
 	margin: 0px;
-	padding: 15px 5px;
+	padding: 15px 0px;
 	font: 700 12px/12px "Montserrat", Helvetica, Arial, san-serif;
 	text-align: left;
 	text-indent: 18px;
@@ -22,14 +22,6 @@ textarea, textarea:focus {
 	width: calc(100% - 198px);
 }
 .spine-single-template .single.gutter .column.one { margin:0; padding:0;}
-section {
-    -webkit-transform: translate3d(0,0,0);
-    -moz-transform: translate3d(0,0,0);
-    -ms-transform: translate3d(0,0,0);
-    -o-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-    -webkit-backface-visibility: hidden;
-}
 section.contentarea {
 	text-align: center;
 	font-family: "Open Sans";
@@ -75,7 +67,6 @@ section.hero  h3 {
 	section.hero  h3 { font: bold 14px/14px "Open Sans"; }
 }
 
-
 section.powerpoint {
 	padding-top:650px;
 	z-index:2;
@@ -85,10 +76,6 @@ section.powerpoint {
 section.powerpoint article {
 	margin-top: 75px;
 	margin-bottom:75px;
-}
-
-section.contentarea.powerpoint{ 
-	/*background: url(../images/bg-timeline.jpg) no-repeat center center;*/
 }
 
 section.contentarea.powerpoint .wrap
@@ -111,9 +98,21 @@ section.contentarea.powerpoint p
 {
     margin-top: 40px;
 }
+
+
+@media (max-width: 791px){
+	section.contentarea.hero {	
+		width: 100%;
+		position:relative;
+	}
+	section.contentarea.powerpoint {
+		padding-top:0px;
+	}
+}
+ 
  
 section.contentarea.statustimeline{ 
-overflow:hidden;
+	overflow:hidden;
 	z-index:2;
 	height:650px;
 	color:white;
@@ -131,7 +130,7 @@ section.contentarea.statustimeline h3, section.faqs h3, section.feedback h3
 	letter-spacing:8px;
 }
 @media (max-width: 450px){
-	section.contentarea.statustimeline h3, section.faqs h3, section.feedback h3{ letter-spacing: 5px;  font:700 12px/34px "Open Sans";}
+	section.contentarea.statustimeline h3, section.faqs h3, section.feedback h3{ letter-spacing: 5px; }
 }
 section.contentarea.statustimeline h5
 {
@@ -249,8 +248,7 @@ section.whitetext h1, section.whitetext h2, section.whitetext h3, section.whitet
 	opacity:0;
 }
 	
-/*
-.slideInLeft, h3.slideInLeft, h5.slideInLeft { opacity:1; }*/
+.slideInLeft, h3.slideInLeft, h5.slideInLeft { opacity:1; }
 /*section { overflow:hidden; } */
 
 a.btnred {
@@ -300,15 +298,6 @@ a.btnred {
 	.picture1,.picture2,.picture3
 	{
 		display:none;
-	}
-}
-
-@media (max-width: 791px){
-	section.hero {	
-		width: 100%;
-	}
-	section.powerpoint {
-		padding-top: 600px;
 	}
 }
 

@@ -67,40 +67,23 @@ jQuery(document).ready(function() {
             )
         }, Math.random() * 5e3);
     }
-    jQuery("#timeline").hide();
-    jQuery('.drawline').one('inview', function() {
-        var thisobject = this;
-        setTimeout(function() {
-            jQuery("#timeline").fadeIn().css("width", "0px").animate({
-                width: '1188px'
-            }, 1000, function() {
-                jQuery("div#timeline").addClass("loaded");
-                setTimeout(function(){ setupSideScroll(); }, 1000);
-            })
-        }, 1000);
-    });
-    jQuery('.slidein').one('inview', function() {
-        var thisobject = this;
-        setTimeout(function() {
-            jQuery(thisobject).addClass("slideInLeft fadeIn animated");
-        }, 500);
-    });
-    jQuery('.slideininputs').one('inview', function() {
-        var delay = 100;
-        jQuery(this).fadeIn().find(".ginput_container").each(function() {
-            var thisobject = this;
-            delay += 50;
-            setTimeout(function() {
-                jQuery(thisobject).addClass("slideInLeft fadeIn animated");
-            }, delay);
-        });
-    });
-    jQuery('.fadein').one('inview', function() {
-        var thisobject = this;
-        setTimeout(function() {
-            jQuery(thisobject).addClass("fadeIn animated");
-        }, 500);
-    });
+    
+    if(isMobile)
+    {
+        drawline();
+        slidein(jQuery('.slidein'));
+        slideininputs();
+        fadein(jQuery('.fadein'));    
+    }
+    else
+    {
+        jQuery("#timeline").hide();
+        jQuery('.drawline').one('inview', drawline);
+        jQuery('.slidein').one('inview', slidein);
+        jQuery('.slideininputs').one('inview', slideininputs);
+        jQuery('.fadein').one('inview', fadein);
+    }
+    
     sectionwidth = jQuery("section").width();
     jQuery(window).scroll(function() {
         var scrolledDistance = jQuery(window).scrollTop();
@@ -165,3 +148,48 @@ function setupSideScroll()
         }
     }, 500);
 }
+
+function drawline() {
+    setTimeout(function() {
+        jQuery("#timeline").fadeIn().css("width", "0px").animate({
+            width: '1188px'
+        }, 1000, function() {
+            jQuery("div#timeline").addClass("loaded");
+            setTimeout(function(){ setupSideScroll(); }, 1000);
+        })
+    }, 1000);
+}
+
+function slidein(which) {
+    var target = jQuery(this);
+    if(target.length == 0)
+        target = jQuery('.slidein');
+    
+    setTimeout(function() {
+        jQuery(target).addClass("slideInLeft fadeIn animated");
+    }, 500);
+}
+
+function slideininputs() {
+    var delay = 100;
+    jQuery('.slideininputs').fadeIn().find(".ginput_container").each(function() {
+        var thisobject = this;
+        delay += 50;
+        setTimeout(function() {
+            jQuery(thisobject).addClass("slideInLeft fadeIn animated");
+        }, delay);
+    });
+}
+
+function fadein(which) {
+    var target = jQuery(this);
+    if(target.length == 0)
+        target = jQuery('.fadein');
+    
+    setTimeout(function() {
+        jQuery(target).addClass("fadeIn animated");
+    }, 500);
+}
+
+var isMobile = false;
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Opera Mobile|Kindle|Windows Phone|PSP|AvantGo|Atomic Web Browser|Blazer|Chrome Mobile|Dolphin|Dolfin|Doris|GO Browser|Jasmine|MicroB|Mobile Firefox|Mobile Safari|Mobile Silk|Motorola Internet Browser|NetFront|NineSky|Nokia Web Browser|Obigo|Openwave Mobile Browser|Palm Pre web browser|Polaris|PS Vita browser|Puffin|QQbrowser|SEMC Browser|Skyfire|Tear|TeaShark|UC Browser|uZard Web|wOSBrowser|Yandex.Browser mobile/i.test(navigator.userAgent)) isMobile = true;
