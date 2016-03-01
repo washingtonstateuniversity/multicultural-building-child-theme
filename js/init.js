@@ -84,15 +84,13 @@ jQuery(document).ready(function() {
         jQuery('.fadein').one('inview', fadein);
     }
     jQuery("#binder").on('swiperight', function(){
-        jQuery("#shelve").click(); 
-        alert("swiperight");
+        if(jQuery(".shelved").length>0)
+            jQuery("#shelve").click(); 
     });
     jQuery("#binder").on('swipeleft', function(){
         if(jQuery(".unshelved").length>0)
-        {
             jQuery("#shelve").click(); 
-            alert("swipeleft");
-        }
+        
     });
     
     
