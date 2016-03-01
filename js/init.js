@@ -83,6 +83,18 @@ jQuery(document).ready(function() {
         jQuery('.slideininputs').one('inview', slideininputs);
         jQuery('.fadein').one('inview', fadein);
     }
+    jQuery(window).on('swiperight', function(){
+       jQuery("#shelve").click(); 
+        console.log("swiperight");
+    });
+    jQuery(window).on('swipeleft', function(){
+        if(jQuery(".unshelved").length>0)
+        {
+            jQuery("#shelve").click(); 
+            console.log("swipeleft");
+        }
+    });
+    
     
     sectionwidth = jQuery("section").width();
     jQuery(window).scroll(function() {
