@@ -167,90 +167,6 @@ section.contentarea.powerpoint p
 	background-color:white;
 	display:none;
 }
-/* desktop */
-@media (min-width: 790px)
-{
-     #viewport {
-        display: block;
-        opacity:1;
-    }
-}
-/* tablet */
-@media (max-width: 791px){
-	section.contentarea.hero {	
-		width: 100%;
-		position:relative;
-        background-position-x:0px;
-	}
-	section.contentarea.powerpoint {
-		padding-top:0px;
-	}
-    section.faqs article {
-        padding-right: 40%;
-    }
-    .picture1 {
-        left:55%;
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 450px;
-        height: 0;
-        padding-top: 82%;
-    }
-	.picture2 {
-        left:55%;
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 450px;
-        height: 0;
-        top:1800px;
-        padding-top: 82%;
-    }
-	.picture3 {
-        left:55%;
-        background-size: contain;
-        background-repeat: no-repeat;
-        top:2127px;
-        width: 54%;
-        height: 0;
-        padding-top: 82%;
-    }
-    #viewport {
-        display: block;
-        opacity:1;
-        top: 151px;
-        left: 125px;
-    }
-}
-/* Phone */
-@media (max-width: 450px){
-	section.hero  h2 { font: 700 52px/50px "Montserrat"; }
-	section.hero  h3 { font: bold 14px/14px "Open Sans"; }
-    .picture1,.picture2,.picture3 {
-        display:none;
-    }
-    section.faqs article {
-        padding-right: 0px;
-    }
-	.picture4,.picture5,.picture6 {
-        display:block;
-        left: 55%;
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 450px;
-        height: 0;
-        padding-top: 82%;
-        background-color: transparent;
-    }
-    section.contentarea.hero { 
-        background-size: cover;
-    }
-	.picture1,.picture2,.picture3 {
-        display:none;
-    }
-    #viewport {
-        left: 70px;
-    }
-}
 
  
 section.contentarea.statustimeline{ 
@@ -528,4 +444,116 @@ ol li, ul li {
 .txtright.textwrap.nofade
 {
     opacity:1;
+}
+
+/* desktop */
+@media (min-width: 790px)
+{
+     #viewport {
+        display: block;
+        opacity:1;
+    }
+}
+/* tablet */
+@media (max-width: 791px){
+	section.contentarea.hero {	
+		width: 100%;
+		position:relative;
+        background-position-x:0px;
+	}
+	section.contentarea.powerpoint {
+		padding-top:0px;
+	}
+    section.faqs article {
+        padding-right: 40%;
+    }
+    section.contentarea.statustimeline h3, section.faqs h3, section.feedback h3 {
+        letter-spacing: 3px;
+    }
+    .picture1 {
+        left:55%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 450px;
+        height: 0;
+        padding-top: 82%;
+    }
+	.picture2 {
+        left:61%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 350px;
+        height: 0;
+        top:1740px;
+        padding-top: 82%;
+    }
+	.picture3 {
+        left:71%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        top:1945px;
+        width: 250px;
+        height: 0;
+        padding-top: 82%;
+    }
+    #viewport {
+        display: block;
+        opacity:1;
+        top: 151px;
+        left: 125px;
+    }
+}
+/* Phone */
+@media (max-width: 450px){
+    section.contentarea.hero { height: 450px; background-position-x:-110px;}
+	section.contentarea.hero h2 { font: 700 52px/50px "Montserrat"; }
+	section.contentarea.hero h3 { font: bold 14px/14px "Open Sans"; }
+    .picture1,.picture2,.picture3 {
+        display:none;
+    }
+    section.faqs article {
+        padding-right: 0px;
+    }
+    section.contentarea.statustimeline h3, section.faqs h3, section.feedback h3 {
+        letter-spacing: 2px;
+    }
+	.picture4,.picture5,.picture6 {
+        display:block;
+        /*left: 55%;*/
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 450px;
+        height: 0;
+        padding-top: 82%;
+        background-color: transparent;
+        display: block;
+        position: relative;
+    }
+    .picture4 {
+        z-index: 3;
+    }
+    .picture5 {
+        width: 300px;
+        margin-top: -67px;
+        margin-left: 96px;
+        z-index: 2;
+    }
+    .picture6 {
+        width: 250px;
+        margin-top: -105px;
+        margin-left: 121px;
+        position: relative;
+        z-index: 1;
+        padding-top: 53%;
+    }
+    section.contentarea.hero { 
+        background-size: cover;
+    }
+	.picture1,.picture2,.picture3 {
+        display:none;
+    }
+    #viewport {
+        left: -90px;
+        top: 20px;
+    }
 }

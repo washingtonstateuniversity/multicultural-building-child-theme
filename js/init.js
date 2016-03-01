@@ -125,6 +125,8 @@ jQuery(document).ready(function() {
                 }, 20);
             });
         }
+        else
+            jQuery(".picture1, .picture2, .picture3").css("margin-top", "0px");
         jQuery(".progressbar").css("margin-left", scrolledDistance / contentHeight * sectionwidth * -1);
     });
     jQuery(window).resize(resizeWindow);
