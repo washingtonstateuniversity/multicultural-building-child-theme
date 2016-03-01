@@ -1,3 +1,8 @@
+::-webkit-input-placeholder {text-indent:20px!important;}
+:-moz-placeholder { text-indent:20px!important;}
+::-moz-placeholder {text-indent:20px!important;}
+:-ms-input-placeholder {text-indent:20px!important;}
+
 article { width:100%; }
 #viewport {
 	top: 160px;
