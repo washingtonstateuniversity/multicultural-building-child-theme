@@ -132,33 +132,48 @@ section.contentarea.powerpoint p
 	background: url(../images/img-photo-3.png) no-repeat center center;
 }
 .picture4 {
-	padding:42px;
+	/*padding:42px;*/
 	z-index: 204;
-	width: 702px;
-	height: 576px;
-	background: url(../images/img-photo-1.png)  no-repeat center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 0;
+    padding-top: 82%;
+	background: url(../images/img-photo-1.png)  no-repeat;
 }
 .picture5 {
 	z-index: 203;
-	width: 702px;
-	height: 576px;
-	margin-top: -221px;
-	background: url(../images/img-photo-2.png)  no-repeat center center;
+	background-size: contain;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 0;
+    padding-top: 82%;
+	background: url(../images/img-photo-2.png)  no-repeat;
 }
 .picture6 {
 	z-index:202;
-	width: 702px;
-	height: 400px;
-	margin-top: -314px;
-	background: url(../images/img-photo-3.png)  no-repeat center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 450px;
+    height: 0;
+    padding-top: 82%;
+	background: url(../images/img-photo-3.png)  no-repeat;
 }
-.picture4, .picture5, .picture6
+/*.picture4, .picture5, .picture6
 {
 	margin-left:-100px;
-}
-section.contentarea.pictures {
+}*/
+.picture4, .picture5, .picture6 {
 	background-color:white;
 	display:none;
+}
+/* desktop */
+@media (min-width: 790px)
+{
+     #viewport {
+        display: block;
+        opacity:1;
+    }
 }
 /* tablet */
 @media (max-width: 791px){
@@ -182,17 +197,19 @@ section.contentarea.pictures {
         padding-top: 82%;
     }
 	.picture2 {
-        left:43%;
+        left:55%;
         background-size: contain;
         background-repeat: no-repeat;
         width: 450px;
         height: 0;
+        top:1800px;
         padding-top: 82%;
     }
 	.picture3 {
-        left:38%;
+        left:55%;
         background-size: contain;
         background-repeat: no-repeat;
+        top:2127px;
         width: 54%;
         height: 0;
         padding-top: 82%;
@@ -214,14 +231,24 @@ section.contentarea.pictures {
     section.faqs article {
         padding-right: 0px;
     }
-	section.contentarea.pictures {
-		display:block;
-	}
+	.picture4,.picture5,.picture6 {
+        display:block;
+        left: 55%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 450px;
+        height: 0;
+        padding-top: 82%;
+        background-color: transparent;
+    }
     section.contentarea.hero { 
         background-size: cover;
     }
 	.picture1,.picture2,.picture3 {
         display:none;
+    }
+    #viewport {
+        left: 70px;
     }
 }
 
