@@ -97,31 +97,34 @@ jQuery(document).ready(function() {
     
     sectionwidth = jQuery("section").width();
     jQuery(window).scroll(function() {
-        var scrolledDistance = jQuery(window).scrollTop();
-        var contentHeight = jQuery("body").height();
-        var adjustment = (scrolledDistance - 1500) / 1578 * 750 * -1;
-        //console.log("adjusting image");
-        jQuery(".picture1").each(function() {
-            var factor = .1;
-            var thisadjustment = adjustment * factor;
-            jQuery(this).animate({
-                "margin-top": thisadjustment + "px"
-            }, 20);
-        });
-        jQuery(".picture2").each(function() {
-            var factor = 1.2;
-            var thisadjustment = adjustment * factor;
-            jQuery(this).animate({
-                "margin-top": thisadjustment + "px"
-            }, 20);
-        });
-        jQuery(".picture3").each(function() {
-            var factor = 1.9;
-            var thisadjustment = adjustment * factor;
-            jQuery(this).animate({
-                "margin-top": thisadjustment + "px"
-            }, 20);
-        });
+        if(jQuery(window).width()>800)
+        {
+            var scrolledDistance = jQuery(window).scrollTop();
+            var contentHeight = jQuery("body").height();
+            var adjustment = (scrolledDistance - 1500) / 1578 * 750 * -1;
+            //console.log("adjusting image");
+            jQuery(".picture1").each(function() {
+                var factor = .1;
+                var thisadjustment = adjustment * factor;
+                jQuery(this).animate({
+                    "margin-top": thisadjustment + "px"
+                }, 20);
+            });
+            jQuery(".picture2").each(function() {
+                var factor = 1.2;
+                var thisadjustment = adjustment * factor;
+                jQuery(this).animate({
+                    "margin-top": thisadjustment + "px"
+                }, 20);
+            });
+            jQuery(".picture3").each(function() {
+                var factor = 1.9;
+                var thisadjustment = adjustment * factor;
+                jQuery(this).animate({
+                    "margin-top": thisadjustment + "px"
+                }, 20);
+            });
+        }
         jQuery(".progressbar").css("margin-left", scrolledDistance / contentHeight * sectionwidth * -1);
     });
     jQuery(window).resize(resizeWindow);
