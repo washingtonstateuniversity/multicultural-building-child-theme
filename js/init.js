@@ -82,17 +82,16 @@ jQuery(document).ready(function() {
         jQuery('.slidein').one('inview', slidein);
         jQuery('.slideininputs').one('inview', slideininputs);
         jQuery('.fadein').one('inview', fadein);
-    }
+    }/*
     jQuery("#binder").on('swiperight', function(){
         if(jQuery(".shelved").length>0)
             jQuery("#shelve").click(); 
     });
     jQuery("#binder").on('swipeleft', function(){
         if(jQuery(".unshelved").length>0)
-            jQuery("#shelve").click(); 
-        
+            jQuery("#shelve").click();         
     });
-    
+    */
     
     sectionwidth = jQuery("section").width();
     jQuery(window).scroll(function() {
