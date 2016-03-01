@@ -202,6 +202,7 @@ section.contentarea.pictures {
         opacity:1;
         top: 151px;
         left: 125px;
+    }
 }
 /* Phone */
 @media (max-width: 450px){
