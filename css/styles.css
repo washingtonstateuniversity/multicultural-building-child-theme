@@ -2,6 +2,7 @@
 :-moz-placeholder { text-indent:20px!important;}
 ::-moz-placeholder {text-indent:20px!important;}
 :-ms-input-placeholder {text-indent:20px!important;}
+select::-ms-expand { display: none; }
 
 section.contentarea.hero article { width:100%; }
 #viewport {
