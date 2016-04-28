@@ -127,7 +127,7 @@ jQuery(document).ready(function() {
         }
         else
             jQuery(".picture1, .picture2, .picture3").css("margin-top", "0px");
-        jQuery(".progressbar").css("margin-left", scrolledDistance / contentHeight * sectionwidth * -1);
+        //jQuery(".progressbar").css("margin-left", scrolledDistance / contentHeight * sectionwidth * -1);
     });
     jQuery(window).resize(resizeWindow);
     resizeWindow();
@@ -143,8 +143,8 @@ var myScroll;
 function resizeWindow() {
     sectionwidth = jQuery("section").width();
     jQuery(".sectionwidth").css("width", sectionwidth);
-    jQuery(".progressbar").css("width", sectionwidth * 2);
-    jQuery(".progresswrapper").css("width", sectionwidth);
+    //jQuery(".progressbar").css("width", sectionwidth * 2);
+    //jQuery(".progresswrapper").css("width", sectionwidth);
     setTimeout(function(){ setupSideScroll(); }, 2000);
 }
 
