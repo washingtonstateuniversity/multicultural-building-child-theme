@@ -111,14 +111,14 @@ jQuery(document).ready(function() {
                 }, 20);
             });
             jQuery(".picture2").each(function() {
-                var factor = 1.2;
+                var factor = 1.3;
                 var thisadjustment = adjustment * factor;
                 jQuery(this).animate({
                     "margin-top": thisadjustment + "px"
                 }, 20);
             });
             jQuery(".picture3").each(function() {
-                var factor = 1.9;
+                var factor = 2.0;
                 var thisadjustment = adjustment * factor;
                 jQuery(this).animate({
                     "margin-top": thisadjustment + "px"
