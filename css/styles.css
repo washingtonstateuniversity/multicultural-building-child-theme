@@ -603,7 +603,7 @@ ol li, ul li {
 	margin:0;
 	padding-bottom:10px;
 	line-height: 15px;
-    font: normal normal normal normal 8.64px / 15px 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+    /*font: normal normal normal normal 8.64px / 15px 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;*/
  }
 .footer a { color: #00CDAC; }
 .home.page .footer { width: calc(100% - 80px);  position:relative;}
