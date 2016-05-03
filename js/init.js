@@ -101,7 +101,7 @@ jQuery(document).ready(function() {
         {
             var scrolledDistance = jQuery(window).scrollTop();
             var contentHeight = jQuery("body").height();
-            var adjustment = (scrolledDistance - 1500) / 1578 * 750 * -1;
+            var adjustment = (scrolledDistance - 764) / 1278 * 750 * -1;
             //console.log("adjusting image");
             jQuery(".picture1").each(function() {
                 var factor = .1;
@@ -111,14 +111,14 @@ jQuery(document).ready(function() {
                 }, 20);
             });
             jQuery(".picture2").each(function() {
-                var factor = 1.3;
+                var factor = .8;
                 var thisadjustment = adjustment * factor;
                 jQuery(this).animate({
                     "margin-top": thisadjustment + "px"
                 }, 20);
             });
             jQuery(".picture3").each(function() {
-                var factor = 2.0;
+                var factor = 1.2;
                 var thisadjustment = adjustment * factor;
                 jQuery(this).animate({
                     "margin-top": thisadjustment + "px"
