@@ -590,7 +590,7 @@ ol li, ul li {
     width: 1105px;
     height: 25px;
 	z-index:10;
-    position: fixed;
+    
     bottom: 0;
     border-top: 1px solid #e4e6e7;
     margin-left: 40px;
