@@ -246,7 +246,7 @@ section.faqs h3 { color: black; text-transform: uppercase;}
 /* Feedback Section */
 section.feedback {
 	padding-top: 75px;
-	padding-bottom:75px;
+	
 	color:white;
 	text-align:left;
 	background: url(../images/bg-feedback.jpg) no-repeat center center;
@@ -256,6 +256,7 @@ section.feedback article {
 	max-width:650px;
 	margin:0px;
 	overflow-x: hidden;
+	margin-bottom:25px;
 }
 section.feedback h3 { margin-bottom: 0px; text-transform: uppercase;}
 section.feedback h5 { margin-top: 0px;}
@@ -597,7 +598,7 @@ ol li, ul li {
 	display:block;
 	line-height: 15px;
 }
-.footer p { 	
+.footer p, .column.one .footer p { 	
 	display:block;
 	margin:0;
 	padding-bottom:10px;
@@ -605,12 +606,12 @@ ol li, ul li {
     font: normal normal normal normal 8.64px / 15px 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
  }
 .footer a { color: #00CDAC; }
-.home.page .footer { position: absolute; width: calc(100% - 80px); border:none;  }
+.home.page .footer { width: calc(100% - 80px);  position:relative;}
 @media (max-width: 989px){
     .footer { 
 		width: calc(100% - 80px);	
 		position: relative; 
 		height: auto;
 	}
-	.home.page .footer { margin-top: 20px; width: calc(100% - 80px); }
+	.home.page .footer {  width: calc(100% - 80px); }
 }
