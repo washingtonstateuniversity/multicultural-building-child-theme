@@ -590,9 +590,10 @@ ol li, ul li {
     width: 1105px;
     height: 25px;
 	z-index:10;
-    
-    bottom: 0;
-    border-top: 1px solid #e4e6e7;
+    position: fixed;
+	bottom: 0;
+	background-color: #fff;
+    border-top: 1px solid rgba(228, 230, 231, 0.9);
     margin-left: 40px;
     padding-top: 10px;
 	display:block;
@@ -603,10 +604,12 @@ ol li, ul li {
 	margin:0;
 	padding-bottom:10px;
 	line-height: 15px;
+	color: #464e54;
     /*font: normal normal normal normal 8.64px / 15px 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;*/
  }
 .footer a { color: #00CDAC; }
-.home.page .footer { width: calc(100% - 80px);  position:relative;}
+.home.page .footer { background-color: rgba(0,0,0,0.0); width: calc(100% - 80px);  position:relative; border-top: 1px solid rgba(228, 230, 231, 0.3); }
+.home.page .footer p, .home.page .column.one .footer p	{ color: rgba(228, 230, 231, 0.5); }
 @media (max-width: 989px){
     .footer { 
 		width: calc(100% - 80px);	
